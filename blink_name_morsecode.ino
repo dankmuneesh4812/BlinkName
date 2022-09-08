@@ -25,30 +25,37 @@ letters is three unit so the ratio is taken as 1:3.
 */
 int intraTime = 600; //time duration between dot and dashes of same letter is 0.6sec
 int spaceTime = 1800; //time duration between two letters is 1.8sec
-//For M Letter
+  
+//For M Letter - dash dash
 dash();
 delay(intraTime);
 dash();
 delay(spaceTime);
-//For U Letter
+  
+//For U Letter - dot dot dash
 dot();
 delay(intraTime);
 dot();
 delay(intraTime);
 dash();
 delay(spaceTime);
-//For N Letter
+  
+//For N Letter - dash dot
 dash();
 delay(intraTime);
 dot();
 delay(spaceTime);
-//For E Letter
+  
+//For E Letter - dot
 for(int i = 0; i < 2; i++) //for loop is used as E letter is repetited twice and loop will terminate after two iterations
 {
 dot();
 delay(spaceTime); // E is represented by single dot so the time gap reamains constant at 1500ms even if loop terminates
 }
-//For S & H Letter
+  
+//For S & H Letter 
+// S - dot dot dot
+// H - dot dot dot dot
 /* 
 S & H are both represented by dots , s being by 3 dots while H by 4,so for loop is used and loop will iterate 7 times 
 */
